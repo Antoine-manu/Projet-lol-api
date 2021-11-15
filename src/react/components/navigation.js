@@ -8,7 +8,7 @@ function Navigation(){
             <Link to="/">
             <li>Acceuil</li>
             </Link>
-            <Link to="/Chartercall">
+            <Link to="/list">
             <li>Liste</li>
             </Link>
         </ul>

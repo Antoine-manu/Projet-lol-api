@@ -5,6 +5,8 @@ body {
   background-color: rgb(15, 13, 24);
   color: white;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
@@ -13,15 +15,13 @@ code {
 }
 main{
   font-family: League, sans-serif; 
-  width: 70%;
+  width: 80%;
   margin: auto;
-}
-
-.charlist{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .card{
   color: white;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
@@ -39,16 +39,21 @@ main{
   position: relative;
 }
 .card:hover{
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.4s;
   background-color: rgb(37, 37, 37);
+}
+.card > a{
+  z-index: 100;
+  color: white;
+  text-decoration: none;
 }
 .cardborder{
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 10;
   left: 0;
   background-image: url(./assets/img/challenger_card.png);
   background-repeat: no-repeat;
