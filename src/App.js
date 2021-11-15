@@ -1,8 +1,8 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import Chartercall from './react/components/chartercall';
-import Lonelychar from './react/components/lonelychar';
+import Chartercall from './react/chartercall';
+import Lonelychar from './react/lonelychar';
 import Footer from './react/components/footer';
 import Navigation from './react/components/navigation';
 import Acceuil from './react/acceuil';

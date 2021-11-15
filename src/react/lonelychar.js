@@ -2,11 +2,12 @@ import React from 'react';
 import {useState, useEffect} from "react";
 import axios from 'axios';
 import {useParams } from 'react-router-dom';
-
+import Skins from './components/skins';
+import Caroussel from './components/carousel';
 
 function LonelyChar(){
 
-    const [persons, setPersons] = React.useState([]);
+    const [character, setPersons] = React.useState([]);
     
     const {name} = useParams();
     console.log(name);
@@ -22,16 +23,24 @@ function LonelyChar(){
           }
 
           console.log(personsArray);
+          
           // tu mets ton nouveau tableau dans ton state
           setPersons(personsArray);
         })
     }, []);
-
-
-    return( persons.map(persons => 
+    
+    return( character.map(persons => 
+        
         <div>
+            {console.log(persons.skins[1].num)}
             {persons.tags}
             <img src={"http://ddragon.leagueoflegends.com/cdn/11.22.1/img/champion/"+ persons.image.full}  alt="" />
+
+              <div className="skins">
+                <Caroussel>
+                  <Skins name={persons.skins} id={name}/>
+                </Caroussel>
+              </div>
           </div>) );
 }
 

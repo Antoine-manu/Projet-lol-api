@@ -1,0 +1,24 @@
+@import "./component/card.scss";
+@import "./component/skins.scss";
+@import "./component/caroussel.scss";
+
+
+
+@font-face { font-family: League; src: url('../assets/font/Friz_Regular.ttf'); } ;
+
+body {
+    background-color: rgb(15, 13, 24);
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main{
+    font-family: League, sans-serif; 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

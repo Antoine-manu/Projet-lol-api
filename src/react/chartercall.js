@@ -22,7 +22,7 @@ function PersonList() {
     
     return (
         persons.map(persons => 
-          <div className="card">
+          <div className="cardchar">
           <div className="cardborder">
             </div>{persons.id}
                 <img src={"http://ddragon.leagueoflegends.com/cdn/11.22.1/img/champion/"+ persons.image.full}  alt="" />
